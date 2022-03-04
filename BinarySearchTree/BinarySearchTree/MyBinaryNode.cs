@@ -44,16 +44,20 @@ namespace BinarySearchTree
         {
             if (this.leftTree != null)
             {
-                leftCount++;
+                this.leftCount++;
                 this.leftTree.Display();
             }
             Console.Write(this.nodeData.ToString() + " ");
             if (this.rightTree != null)
             {
-                rightCount++;
+               this.rightCount++;
                 this.rightTree.Display();
             }
         }
-    
+        public void GetSize()
+        {
+            Console.WriteLine("\nSize of Binary Tree is: " + (this.leftCount + this.rightCount + 1));
+        }
+
     }
 }
